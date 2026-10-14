@@ -1,0 +1,15 @@
+﻿{
+  "schema_version": "observer-project-v1",
+  "protocol": "jsonl-v4",
+  "image": "python:3.12-slim",
+  "build": [],
+  "run": ["python3", "-u", "agent.py"],
+  "working_directory": ".",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PRO_REQ_TIMING_NIGHTS": "8",
+    "PRO_FORECAST_DISCOUNT": "0.3",
+    "OPENAI_MODEL": "qwen-plus",
+    "LLM_JSON_MODE": "1"
+  }
+}

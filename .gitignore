@@ -1,0 +1,10 @@
+# Never commit secrets — model keys live in the platform's key store or a local .env
+.env
+.env.*
+*.pem
+
+# Python / OS noise
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
